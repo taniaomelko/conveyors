@@ -1,0 +1,18 @@
+@import '../../scss/variables/variables';
+
+.not-found {
+  padding: 100px 0;
+}
+.not-found__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+}
+.not-found__description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}

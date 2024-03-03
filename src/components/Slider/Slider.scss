@@ -1,0 +1,111 @@
+@import '../../scss/variables/variables';
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.slider__main {
+  position: relative;
+}
+.slider__image-container {
+  position: relative;
+}
+.slider__main-image {
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid $color-grey-100;
+  @media (min-width: $laptopBreakpoint) {
+    max-width: unset;
+  }
+}
+.slider__image-counter {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-cyan-950;
+}
+.slider__expand {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.slider__buttons-main {
+  display: none;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  gap: 12px;
+  @media (min-width: $tabletBreakpoint) {
+    display: flex;
+  }
+}
+.slider__image-counter,
+.slider__expand {
+  display: none;
+  @media (min-width: $tabletBreakpoint) {
+    display: block;
+  }
+}
+.slider__note {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  max-width: 45%;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-grey-600;
+}
+.slider__thumbnails-wrap {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  @media (min-width: $tabletBreakpoint) {
+    padding: 0 20px;
+  }
+  @media (min-width: $laptopBreakpoint) {
+    padding: 0;
+  }
+  .button--square {
+    display: none;
+    flex-shrink: 0;
+    width: 32px;
+    min-width: 32px;
+    height: unset;
+    @media (min-width: $tabletBreakpoint) {
+      display: block;
+    }
+  }
+}
+.slider__thumbnails {
+  display: flex;
+  margin: 0 -4px;
+  padding: 0 12px;
+  overflow: auto;
+  @media (min-width: $tabletBreakpoint) {
+    padding: 0;
+    overflow: hidden;
+  }
+}
+.slider__thumbnail-wrap {
+  padding: 0 4px;
+  flex-shrink: 0;
+}
+.slider__thumbnail {
+  width: 70px; 
+  height: auto;
+  border: 1px solid $color-grey-100;
+  border-radius: $border-radius-medium;
+  cursor: pointer;
+  @media (min-width: $tabletBreakpoint) {
+    width: 108px;
+  }
+}

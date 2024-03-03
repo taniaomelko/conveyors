@@ -1,0 +1,11 @@
+@import '../variables/variables.scss';
+
+input[type=number] {
+  padding: 10px;
+  background-color: $color-grey-50;
+  border: 1px solid $color-grey-200;
+  border-radius: $border-radius-medium;
+  font-size: 16px;
+  line-height: 1;
+  color: $color-grey-800;
+}

@@ -1,0 +1,35 @@
+@import '../../scss/variables/variables';
+
+.breadcrumbs__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 2px;
+}
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-cyan-950;
+  transition: color 0.3s;
+  &:not(:last-child) {
+    &:hover {
+      color: $color-azure-550;
+    }
+  }
+  &:first-of-type {
+    color: $color-cyan-950;
+  }
+  &:nth-of-type(2) {
+    color: $color-grey-600;
+  }
+  &:last-of-type {
+    color: $color-grey-500;
+  }
+}

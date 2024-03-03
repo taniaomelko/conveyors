@@ -1,0 +1,18 @@
+@import '../../scss/variables/variables';
+
+.conveyors-list {
+  padding: 40px 0;
+}
+.conveyors-list__title {
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.conveyors-list__item-title {
+  transition: color 0.3s;
+  &:hover {
+    color: $color-azure-550;
+  }
+}

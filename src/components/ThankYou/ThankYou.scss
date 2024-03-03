@@ -1,0 +1,30 @@
+@import '../../scss/variables/variables';
+
+.thank-you {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: $color-white;
+  padding: 20px 0;
+}
+.thank-you__back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s;
+  &:hover {
+    color: $color-azure-550;
+  }
+}
+.thank-you__title-wrap {
+  padding: 100px 0;
+}
+.thank-you__title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+}

@@ -1,0 +1,36 @@
+@import '../../scss/variables/variables';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: $color-white;
+  box-shadow: $shadow;
+  padding: 10px 0;
+  nav {
+    ul {
+      display: flex;
+      li {
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font-family: 'SF-Pro-Text';
+          font-size: 14px;
+          line-height: 1;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: $color-cyan-950;
+          transition: color 0.3s;
+          &:hover {
+            color: $color-azure-550;
+          }
+          &.active {
+            color: $color-azure-550;
+          }
+        }
+      }
+    }
+  }
+}

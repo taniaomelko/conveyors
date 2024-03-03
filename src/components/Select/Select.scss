@@ -1,0 +1,79 @@
+@import '../../scss/variables/variables';
+
+.select {
+  position: relative;
+}
+.select__select-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: $color-grey-50;
+  border: 1px solid $color-grey-200;
+  border-radius: 8px;
+  transition: border-color 0.3s, color 0.3s;
+  cursor: pointer;
+  &:hover {
+    border-color: $color-dark-azure;
+    color: $color-dark-azure;
+    .select__select {
+      color: $color-dark-azure;
+    }
+  }
+  @media (min-width: $tabletBreakpoint) {
+    display: none;
+  }
+  &.open {
+    .select__icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+.select__select {
+  font-size: 14px;
+  line-height: 1;
+  color: $color-grey-800;
+}
+.select__icon {
+  transition: transform 0.3s;
+}
+.select__group {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  max-height: 250px;
+  overflow: auto;
+  background-color: $color-white;
+  box-shadow: $shadow;
+  border-radius: $border-radius-medium;
+  @media (min-width: $tabletBreakpoint) {
+    display: block;
+    position: relative;
+    padding: 0;
+    height: unset;
+    box-shadow: none;
+    border-radius: unset;
+    overflow: unset;
+  }
+  &.visible {
+    display: block;
+  }
+}
+.select__options-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  .info-title__text-wrap {
+    @media (max-width: $tabletBreakpoint) {
+      z-index: 1;
+      transform: none;
+      top: 100%;
+      bottom: unset;
+      right: 0;
+      left: unset;
+    }
+  }
+}

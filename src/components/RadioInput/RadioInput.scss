@@ -1,0 +1,63 @@
+@import '../../scss/variables/variables';
+
+.radio-input__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44px, 1fr)); 
+  grid-template-rows: auto;
+  gap: 16px;
+  width: fit-content;
+  max-width: 100%;
+  @media (min-width: $laptopBreakpoint) {
+    gap: 12px;
+  }
+}
+.radio-input__item {
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $border-radius-medium;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-grey-900;
+  background-color: $color-azure-150;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  @media (min-width: $laptopBreakpoint) {
+    height: 32px;
+    border-radius: $border-radius-small;
+  }
+  &:not(:last-child) {
+    width: 44px;
+    @media (min-width: $laptopBreakpoint) {
+      width: 48px;
+    }
+  }
+  &:last-child {
+    grid-column: span 2;
+  }
+  &.active {
+    background-color: $color-dark-azure;
+    color: $color-white;
+  }
+  &.disabled {
+    background-color: $color-grey-200;
+    color: $color-white;
+    cursor: not-allowed;
+  }
+  &:not(.disabled):hover {
+    background-color: $color-azure-550;
+    color: $color-white;
+  }
+  input[type=radio] {
+    appearance: none;
+  }
+}
+.radio-input__number-input {
+  margin-top: 16px;
+  @media (min-width: $laptopBreakpoint) {
+    margin-top: 12px;
+  }
+}

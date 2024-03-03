@@ -1,0 +1,30 @@
+@import '../../scss/variables/variables';
+
+.price {
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 700;
+  color: $color-dark-azure;
+  text-transform: uppercase;
+  span {
+    color: $color-grey-600;
+  }
+  big {
+    font-size: 20px;
+  }
+  small {
+    font-size: 10px;
+  }
+}
+.price__note {
+  margin-top: 8px;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: $color-grey-600;
+  @media (min-width: $laptopBreakpoint) {
+    order: 1;
+    margin-top: 24px;
+    font-size: 12px;
+  }
+}
