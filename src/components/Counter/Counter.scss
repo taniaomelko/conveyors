@@ -1,0 +1,23 @@
+@import '../../scss/variables/variables';
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 8px;
+  .button--square {
+    flex-shrink: 0;
+    &:not(:disabled) {
+      background-color: $color-white;
+      &:hover {
+        background-color: $color-azure-550;
+        color: $color-white;
+      }
+    }
+  }
+}
+input.counter__value {
+  width: 100%;
+  background: $color-white;
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+[
+{ "id": "WMD-2446F-GRYI",
+  "title": "Incline & Decline Conveyors",
+  "slug": "incline-&-decline-conveyors",
+  "images": [
+    "conveyor-3d-1.jpg",
+    "conveyor-3d-2.jpg",
+    "conveyor-3d-3.jpg",
+    "conveyor-3d-4.jpg",
+    "conveyor-3d-5.jpg"
+  ],
+  "width": [
+    { "value": 10, "available": true },
+    { "value": 18, "available": true },
+    { "value": 24, "available": true },
+    { "value": 30, "available": true },
+    { "value": 36, "available": true },
+    { "value": 42, "available": true },
+    { "value": 48, "available": true },
+    { "value": 54, "available": true }
+  ],
+  "options": [
+    {
+      "title": "Chain Driven Feeder",
+      "info": "Chain Driven Feeder additional info"
+    },
+    {
+      "title": "Additional Support Structures",
+      "info": "Additional Support Structures additional info"
+    },
+    {
+      "title": "Knee Braces",
+      "info": "Knee Braces additional info"
+    },
+    {
+      "title": "Enhanced support",
+      "info": "Enhanced support additional info"
+    }
+  ],
+  "SKU": "WMD-2446F-GRYI",
+  "uponRequest": true,
+  "rating": {
+    "grade": 5,
+    "quantity": 20
+  }
+}
+]

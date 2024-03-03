@@ -1,0 +1,64 @@
+@import '../../scss/variables/variables';
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: $color-red-orange-200;
+  border-radius: $border-radius-small;
+}
+.rating__wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: $border-radius-small;
+  color: $color-white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.rating__stars {
+  display: flex;
+  gap: 2px;
+}
+.rating__star {
+  &.filled {
+    color: $color-halloween-orange;
+  }
+}
+.rating__quantity {
+  color: $color-halloween-orange;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+}
+.rating__read {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-cyan-950;
+  transition: color 0.3s;
+  cursor: pointer;
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+  &:hover {
+    color: $color-halloween-orange;
+  }
+}
+.rating__read-text {
+  display: none;
+  @media (min-width: $laptopBreakpoint) {
+    display: block;
+  }
+}

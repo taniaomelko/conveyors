@@ -1,0 +1,13 @@
+@import './variables/variables.scss';
+
+body {
+  font-family: 'SF-Pro-Text', sans-serif;
+  color: $color-cyan-950;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

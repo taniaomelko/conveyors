@@ -1,0 +1,55 @@
+@import '../variables/variables';
+
+.button {
+  display: inline-block;
+}
+.button--cta {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 14px;
+  background-color: $color-halloween-orange;
+  border: none;
+  border-radius: $border-radius-medium;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-white;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: $color-red-orange-700;
+  }
+  &:active {
+    background-color: $color-red;
+  }
+  &:disabled {
+    background-color: $color-grey-200;
+    cursor: not-allowed;
+  }
+}
+.button--square {
+  appearance: none;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  border-radius: $border-radius-medium;
+  background-color: $color-grey-50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+  color: $color-black;
+  cursor: pointer;
+  &:not(:disabled):hover {
+    background-color: $color-azure-550;
+    color: $color-white;
+  }
+  &:disabled {
+    background-color: $color-grey-200;
+    color: $color-white;
+    cursor: not-allowed;
+  }
+}
