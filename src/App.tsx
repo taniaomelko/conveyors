@@ -13,7 +13,9 @@ const router =
       <Route path="conveyors/:slug" element={ <Conveyor /> } />
       <Route path="thank-you" element={ <ThankYou />} />
     </Route>
-  )
+  ), {
+    basename: process.env.PUBLIC_URL
+  }
 );
 
 function App() {
