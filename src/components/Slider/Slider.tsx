@@ -35,7 +35,7 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
 
   // click on thumbnail
   const handleThumbnailClick = (index: number) => {
-    setActiveIndex(index);
+    setActiveIndex(index % images.length);
   };
 
   // click on thumbnails prev button
