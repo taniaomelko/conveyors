@@ -5,7 +5,7 @@ export default function Root() {
   return (
     <main>
       <Header />
-      <Outlet/>
+      <Outlet />
     </main>
   )
 }
